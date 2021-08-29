@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Scheherazade:wght@400;700&display=swap" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" />
+  <style>
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      background: #3DB2FF;
+      font-family: 'Scheherazade'
+    }
+
+    .contact-form {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 800px;
+      transform: translate(-50%, -50%)
+    }
+
+    .contact-form .form {
+      background: url(contact.png);
+      background-size: cover;
+      min-height: 550px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      direction: rtl;
+      padding: 15px
+    }
+
+    .contact-form .form input {
+      width: 70%;
+      max-width: 100%;
+      padding: 10px 0;
+      border: 0;
+      border-bottom: 1px solid #ffd1cf;
+      color: #3DB2FF;
+      margin: 15px auto;
+      outline: none;
+      font-size: 21px;
+      font-weight: bold;
+      transition: .7s;
+      background: transparent
+    }
+    .contact-form .form input[type="submit"] {
+      background: #f7f7f7;
+      border: 1px solid #ffd1cf;
+      cursor: pointer;
+      color: #333;
+      margin-top: 30px
+    }
+    .contact-form .form input[type="submit"]:hover {
+      border: 1px solid #3DB2FF;
+      color: #3DB2FF
+    }
+    .contact-form .form input:not(input[type="submit"]):focus::placeholder {
+      opacity: 0
+    }
+    .contact-form .form input:not(input[type="submit"]):focus {
+      border-bottom: 1px solid #3DB2FF
+    }
+    @media (max-width: 767px) {
+      .contact-form {
+        width: 100%
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="contact-form text-center">
+    <div class="container">
+      <form action="" class="form">
+        <input type="text" name="name" placeholder="الاسم" />
+        <input type="text" name="name" placeholder="الاسم بالكامل" />
+        <input type="email" name="mail" placeholder="البريد الالكترونى" />
+        <input type="password" name="pass" placeholder="الرقم السرى" />
+        <input type="submit" value="تقديم الطلب" />
+      </form>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
